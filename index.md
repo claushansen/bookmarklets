@@ -1,8 +1,9 @@
 ## Bookmarklets af Claus Hansen
 
 Her kan du finde de bookmarklets jeg har udviklet igennem tiden. Bare klik på den enkelte bookmarklet og træk linket til din bookmark linje i din browser.
-### Moodle
+## Moodle
 Disse bookmarklets er udviklet til moodle.
+### Statistik over afleverede opgaver
 Denne bookmarklet laver en hurtig oversigt over de afleverede opgave i Moodle: Betjeningspanel -> Mine kurser ->[Kursus] -> Deltagere -> [Elev] ->Rapporter -> Komplet rapport.
 
 Træk dette link til dine bookmarks og klik på det, når du er på oventående side i Moodle. Så vises en overskuelig statistik over elevens afleverede opgaver, i toppen af siden.
