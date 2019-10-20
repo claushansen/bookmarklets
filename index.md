@@ -1,37 +1,13 @@
-## Welcome to GitHub Pages
+## Bookmarklets af Claus Hansen
 
-You can use the [editor on GitHub](https://github.com/claushansen/bookmarklets/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Her kan du finde de bookmarklets jeg har udviklet igennem tiden. Bare klik på den enkelte bookmarklet og træk linket til din bookmark linje i din browser.
+### Moodle
+Disse bookmarklets er udviklet til moodle.
+Denne bookmarklet laver en hurtig oversigt over de afleverede opgave i Moodle: Betjeningspanel -> Mine kurser ->[Kursus] -> Deltagere -> [Elev] ->Rapporter -> Komplet rapport.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Træk dette link til dine bookmarks og klik på det, når du er på oventående side i Moodle. Så vises en overskuelig statistik over elevens afleverede opgaver, i toppen af siden.
+[Opgave Statistik](javascript:(function()%7Bvar%20student%20%3D%20%24('.page-header-headings%20h2').text()%3Bvar%20opgaveresult%20%3D%20%5B%5D%3Bvar%20alleOpgaver%20%3D%20%24('.submissionstatustable')%3Bvar%20antalOpgaver%20%3D%20alleOpgaver.length%3Bvar%20antalAfleverede%20%3D%20%24('.submissionstatussubmitted').length%3Bvar%20afleveringsprocent%20%3D%20Math.floor((antalAfleverede%20%2F%20antalOpgaver)%20*%20100)%3B%24('.submissionstatustable').parent('ul').prev('h4').each(function%20(index)%20%7Blet%20obj%20%3D%20%7B%7D%3Bobj.titel%20%3D%20%24(this).text()%3Blet%20findSubmitted%20%3D%20%24(alleOpgaver%5Bindex%5D).find('.submissionstatussubmitted')%3Bif%20(findSubmitted.length%20%3C%201)%20%7Bobj.afleveret%20%3D%20'Nej'%3B%7D%20else%20%7Bobj.afleveret%20%3D%20'Ja'%3B%7Dopgaveresult.push(obj)%3B%7D)%3Bopgaveresult%3Bfunction%20makeInfo()%20%7Bvar%20infoText%20%3D%20'%3Ch3%3E'%20%2B%20student%20%2B%20'%20har%20afleveret%20'%20%2B%20antalAfleverede%20%2B%20'%20ud%20af%20'%20%2B%20antalOpgaver%20%2B%20'%20opgaver.%3C%2Fh3%3E'%3BinfoText%20%2B%3D%20'%3Ch4%3EAfleveringsprocenten%20er%20derfor%20p%C3%A5%20'%20%2B%20afleveringsprocent%20%2B%20'%25.%3C%2Fh4%3E'%3BinfoText%20%2B%3D%20'%3Cb%3EOpgaver%20udf%C3%B8rt%3A%3C%2Fb%3E%3Cbr%3E'%3BinfoText%20%2B%3D%20'%3Cul%3E'%3Bfor%20(var%20i%20%3D%200%3B%20i%20%3C%20opgaveresult.length%3B%20i%2B%2B)%20%7BinfoText%20%2B%3D%20'%3Cli%3E'%3Blet%20color%20%3D%20opgaveresult%5Bi%5D.afleveret%20%3D%3D%20'Ja'%20%3F%20'green'%20%3A%20'red'%3BinfoText%20%2B%3D%20opgaveresult%5Bi%5D.titel%20%2B%20'%20%3A%20%3Cb%20style%3D%22color%3A'%20%2B%20color%20%2B%20'%22%3E'%20%2B%20opgaveresult%5Bi%5D.afleveret%20%2B%20'%3C%2Fb%3E'%3BinfoText%20%2B%3D%20'%3C%2Fli%3E'%3B%7DinfoText%20%2B%3D%20'%3C%2Ful%3E'%3Bvar%20infodiv%20%3D%20%24('%3Cdiv%20id%3D%22opgaveinfo%22%3E%3C%2Fdiv%3E')%3Binfodiv.css(%7B%20'background-color'%3A%20'%23FFF'%2C%20'padding'%3A%20'20px'%2C%20'margin-bottom'%3A%20'30px'%20%7D)%3Binfodiv.html(infoText)%3Binfodiv.insertBefore(%24('.page-context-header'))%3B%7DmakeInfo()%7D)())
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/claushansen/bookmarklets/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
