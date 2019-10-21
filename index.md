@@ -23,7 +23,6 @@ Disse bookmarklets er udviklet til elevplan
 
 * [Kopier elevliste](javascript:(function()%7Bfor(var%20activetab%3Ddocument.querySelector('div%5Bid*%3D%22tabs-%22%5D%3Anot(.ui-tabs-hide')%2Celevrows%3Dactivetab.querySelectorAll('tr%5Bid*%3D%22tabs-%22%5D')%2CexportList%3D%22%22%2Ci%3D0%3Belevrows.length%3Ei%3Bi%2B%2B)%7Blet%20e%3Delevrows%5Bi%5D.cells%2Ct%3De%5B1%5D.childNodes%5B1%5D.title%2B%22%20%22%2Be%5B2%5D.childNodes%5B1%5D.title%2Co%3Delevrows%5Bi%5D.querySelectorAll(%22.ikkegodkendt%22).length%3E0%2Cl%3Delevrows%5Bi%5D.querySelectorAll(%22.godkendt%22).length%3E0%3Bo%7C%7Cl%7C%7C(exportList%2B%3Dt%2B%22%5Cn%22)%7Dfunction%20copyTextToClipboard(e)%7Bvar%20t%3Ddocument.createElement(%22textarea%22)%3Bt.value%3De%2Cdocument.body.appendChild(t)%2Ct.focus()%2Ct.select()%3Btry%7Bvar%20o%3Ddocument.execCommand(%22copy%22)%3Balert(%22Kopieringen%20af%20elevliste%20%22%2B(o%3F%22lykkedes%22%3A%22Fejlede%22))%7Dcatch(e)%7Balert(%22Oops%2C%20unable%20to%20copy%22%2Ce)%7Ddocument.body.removeChild(t)%7Dconsole.log(exportList)%2CcopyTextToClipboard(exportList)%7D)())
 
-
 Denne bookmarklet laver en hurtig liste over de elever der er tilstede på elevplan. 
 
 Træk dette link til dine bookmarks og klik på det, når du er på fraværssiden side i elevplan. Så kopieres en liste over eleverne til din udklipsholder.
