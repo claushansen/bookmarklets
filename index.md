@@ -3,6 +3,12 @@
 
 Her kan du finde de bookmarklets jeg har udviklet igennem tiden. Bare klik på den enkelte bookmarklet og træk linket til din bookmark linje i din browser.
 
+## Generelle værktøjer
+Disse bookmarklets er udviklet som forkellige hjælpeværktøjer.
+### URL2QR
+* <a href="javascript:(function()%7Bvar%20url%3DencodeURI(window.location.href)%2CGoogleQrUrl%3D%22https%3A%2F%2Fchart.googleapis.com%2Fchart%3Fcht%3Dqr%26chl%3D%22%2Burl%2B%22%26chs%3D400x400%22%3Bwindow.open(GoogleQrUrl%2C%22_blank%22)%7D)()">URL2QR</a>
+
+Åbner en ny tab/window med en QR kode til siden
 ---
 ## Moodle
 Disse bookmarklets er udviklet til moodle.
